@@ -1,0 +1,75 @@
+body{
+    background-color: #e3defc;
+}
+
+ul{
+    list-style: none;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+}
+
+.card{
+    margin-left: auto;
+    padding: 2.5%;
+    background-color: #cfc6ff;
+    height: auto;
+    border-radius: 5px;
+    
+}
+
+li{
+    font-family: 'PT Sans', sans-serif;
+}
+
+.header{
+    display:flex;
+    justify-content:space-between; 
+    text-align:center;
+    margin-top:-5px;
+}
+
+#searchInput{
+    padding: 5%;
+    color: white;
+    background-color: #141e42;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.5s;
+    outline: 0;
+}
+
+#searchInput:hover, button:hover{
+    color: #008056;
+    background-color: #b9fee7;
+}
+input{
+    border-radius: 5px;
+}
+
+.form-control, #searchInput{
+    padding: 2.5% 5%;
+}
+
+li, h1{
+    color: #141e42;
+}
+
+.btn-close{
+    background-color: none!important;
+}
+
+.input-group .d-flex{
+    margin: auto;
+}
