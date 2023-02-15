@@ -1,23 +1,51 @@
 let sinput = document.getElementById("searchInput");
 let mylist = document.getElementById("todo-list");
-let closeButtons = document.querySelectorAll(".btn-close");
+
+
 
 function function1() {
   var input = document.querySelector("input").value;
   var list = document.querySelector("#todo-list");
   var newItem = document.createElement("li");
   newItem.classList.add("list-group-item");
-  newItem.innerHTML = `
-    <input class="form-check-input me-1" type="checkbox" value="" id="checkbox">
-    <label class="form-check-label" for="checkbox">${input}</label>
-    <button type="button" class="btn-close" style="background-color:transparent; outline-color:transparent" aria-label="Close"></button>
-  `;
+  if (input.length > 2) {
+    newItem.innerHTML = `
+    <input class="form-check-input me-1" type="checkbox" value="">
+    <label class="form-check-label">${input}</label>
+    <button type="button" class="btn-close" aria-label="Close"></button>
+    <button class="btn small calendarButton"><i class="fas fa-calendar input-prefix"></i></button>
+    <span class="task-date"></span>
+  `;    
   list.appendChild(newItem);
-}
-
-for (let button of closeButtons) {
-  button.addEventListener("click", function(event) {
+  }
+  newItem.querySelector(".btn-close").addEventListener("click", function (event) {
     let toDoItem = event.target.parentElement;
     toDoItem.remove();
   });
+  newItem.querySelector(".calendarButton").addEventListener("click", function() {
+    let dateInput = prompt("Enter the date (MM/DD/YYYY)");
+    if (dateInput) {
+      this.nextElementSibling.innerHTML = "Due " + dateInput;
+    }
+  });
 }
+
+
+  let closeButtons = document.querySelectorAll(".btn-close");
+  for (let button of closeButtons) {
+    button.addEventListener("click", function (event) {
+      let toDoItem = event.target.parentElement;
+      toDoItem.remove();
+    });
+  }
+
+
+  const calendarButtons = document.querySelectorAll('.calendarButton');
+  calendarButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const dateInput = prompt("Enter the date (MM/DD/YYYY)");
+      if (dateInput) {
+        this.nextElementSibling.innerHTML = "Due " + dateInput;
+      }
+    });
+  });

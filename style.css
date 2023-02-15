@@ -14,17 +14,17 @@ h1{
 .container{
     display: flex;
     justify-content: center;
-    position: absolute;
+    margin: 0 auto;
     align-items: center;
 }
 
 .card{
-    margin-left: auto;
     padding: 2.5%;
     background-color: #cfc6ff;
     height: auto;
     border-radius: 5px;
     margin: 0 auto;
+    width: 75%;
     
 }
 
@@ -51,7 +51,7 @@ li{
     outline: 0;
 }
 
-#searchInput:hover, button:hover{
+#searchInput:hover{
     color: #008056;
     background-color: #b9fee7;
 }
@@ -67,14 +67,35 @@ li, h1{
     color: #141e42;
 }
 
-.btn-close{
-    background-color: none!important;
-}
-
 .input-group .d-flex{
     margin: auto;
 }
 
+.btn-close{
+    background-color:transparent; 
+    float: right;
+}
+.calendarButton{
+    float: right;
+}
 .btn-close:hover{
     color: red;
 }
+
+.form-check-input:checked ~ .form-check-label {
+    text-decoration: line-through;
+  }
+.dateDisplay {
+    margin-left: 10px;
+}
+
+span{
+    float: right;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 25%;
+  }
