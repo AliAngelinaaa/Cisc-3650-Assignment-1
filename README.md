@@ -13,7 +13,7 @@ ID: 24226890
 - [x] Allow users to uncheck items that were accidentally checked. (1 pts)
 ### C. Even Better
 - [ ] Allow users to color code tasks to indicate priority or type of task. (2 pts)
-- [ ] Give some sort of celebratory recognition when users complete a task – visual or sound or both. (See Google Tasks for an example.) Again, be thoughtful and deliberate about your design. (1 pt)
+- [x] Give some sort of celebratory recognition when users complete a task – visual or sound or both. (See Google Tasks for an example.) Again, be thoughtful and deliberate about your design. (1 pt)
 ### D. Cherry on Top:
 - [ ] Allow users to define subtasks. Subtasks should be able to be checked off/deleted individually OR checked off /deleted together with the super-task. (1 pt)
 

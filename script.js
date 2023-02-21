@@ -28,6 +28,14 @@ function function1() {
       this.nextElementSibling.innerHTML = "Due " + dateInput;
     }
   });
+  newItem.querySelector("input[type='checkbox']").addEventListener("change", function(){
+    if(this.checked){
+      taskFinImg.style.display = "block";
+      setTimeout(function(){
+        taskFinImg.style.display = "none";
+      },3000)
+    }
+  })
 }
 
 
@@ -49,3 +57,17 @@ function function1() {
       }
     });
   });
+
+  let checkboxes = document.querySelectorAll("input[type='checkbox']");
+  let taskFinImg = document.querySelector(".taskFin");
+
+  checkboxes.forEach(function(checkbox){
+    checkbox.addEventListener("change", function () {
+      if(this.checked){
+        taskFinImg.style.display = "block";
+        setTimeout(function(){
+          taskFinImg.style.display = "none";
+        },3000)
+      }
+    });
+  })

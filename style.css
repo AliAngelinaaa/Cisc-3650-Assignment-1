@@ -99,3 +99,8 @@ span{
     right: 0;
     height: 25%;
   }
+
+.taskFin{
+    margin-left:auto;
+    display: none;
+}
