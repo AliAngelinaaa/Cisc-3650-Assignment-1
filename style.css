@@ -51,7 +51,7 @@ li{
     outline: 0;
 }
 
-.dropdown-toggle:hover,#searchInput:hover{
+.dropdown-toggle:hover,#searchInput:hover, .subtaskButton:hover{
     color: #008056;
     background-color: #b9fee7;
 }
@@ -59,7 +59,7 @@ input{
     border-radius: 5px;
 }
 
-.form-control, #searchInput{
+#searchInput{
     padding: 2.5% 5%;
 }
 
@@ -107,4 +107,13 @@ span{
 
 .dropdown-toggle{
     background-color: #141e42;
+}
+
+.subtaskButton{
+    color: white;
+    background-color: #141e42;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+    outline: 0;   
 }
