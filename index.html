@@ -11,7 +11,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito&family=PT+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 
 </head>
 
@@ -36,6 +37,18 @@
           <button type="button" class="btn-close" aria-label="Close"></button>
           <button class="btn small calendarButton"><i class="fas fa-calendar input-prefix"></i></button>
           <span class="task-date"></span>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle d-inline-block" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Priority
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">High Priority</a>
+              <a class="dropdown-item" href="#">Middle Priority</a>
+              <a class="dropdown-item" href="#">Low Priority</a>
+            </div>
+          </div>
+
         </li>
         <li class="list-group-item">
           <input class="form-check-input me-1" type="checkbox" value="">
@@ -43,6 +56,17 @@
           <button type="button" class="btn-close" aria-label="Close"></button>
           <button class="btn small calendarButton"><i class="fas fa-calendar input-prefix"></i></button>
           <span class="task-date"></span>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Priority
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">High Priority</a>
+              <a class="dropdown-item" href="#">Middle Priority</a>
+              <a class="dropdown-item" href="#">Low Priority</a>
+            </div>
+          </div>
         </li>
         <li class="list-group-item">
           <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
@@ -50,16 +74,41 @@
           <button type="button" class="btn-close" aria-label="Close"></button>
           <button class="btn small calendarButton"><i class="fas fa-calendar input-prefix"></i></button>
           <span class="task-date"></span>
-          
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Priority
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">High Priority</a>
+              <a class="dropdown-item" href="#">Middle Priority</a>
+              <a class="dropdown-item" href="#">Low Priority</a>
+            </div>
+          </div>
+          <ul class="subtask-list"></ul>
+          <div class="input-group">
+            <input type="text" class="form-control subtask-input" placeholder="Add a subtask...">
+            <button onclick="addTask(this)" class="btn btn-outline-dark subtaskButton" type="button">Add
+              subtask</button>
+          </div>
         </li>
+
       </ul>
     </div>
-    <img src="images/bt21-mang.gif" class="bottom-right"/>
-    ><img src="images/congrats.gif" class = "taskFin"/>
+    <img src="images/bt21-mang.gif" class="bottom-right" />
+    <img src="images/congrats.gif" class="taskFin" />
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  </body>
-  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+<script src="script.js"></script>
 </body>
 
 </html>

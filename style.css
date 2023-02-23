@@ -51,7 +51,7 @@ li{
     outline: 0;
 }
 
-#searchInput:hover{
+.dropdown-toggle:hover,#searchInput:hover{
     color: #008056;
     background-color: #b9fee7;
 }
@@ -103,4 +103,8 @@ span{
 .taskFin{
     margin-left:auto;
     display: none;
+}
+
+.dropdown-toggle{
+    background-color: #141e42;
 }
