@@ -52,11 +52,14 @@ function function1() {
     }
   })
 
-  newItem.querySelector('.dropdown-item').addEventListener('click', (event) => {
-    event.preventDefault();
-    let priority = event.target.textContent;
-    event.target.parentElement.previousElementSibling.textContent = priority;
-  });
+  const dropdownItems = newItem.querySelectorAll('.dropdown-item');
+    dropdownItems.forEach(item => {
+      item.addEventListener('click', (event) => {
+        event.preventDefault();
+        let priority = event.target.textContent;
+        event.target.parentElement.previousElementSibling.textContent = priority;
+      });
+    });
 
 }
 
